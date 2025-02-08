@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Your Bags</title>
+    <style>
+        body {
+            font-family: Copperplate, sans-serif;
+            background: linear-gradient(to right, #4bddeb, #4bddeb);
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: url('pack_your_bags_cover.jpg') center/cover no-repeat;
+            color: rgb(255, 255, 255);
+            padding: 40px;
+            text-align: center;
+            font-family: Garamond, serif;
+            font-size: 3em;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px;
+        }
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .search-bar input:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.475);
+        }
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+        }
+        .destination {
+            background: #fffde7;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgb(112, 136, 85);
+            transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+            text-align: center;
+            width: 300px;
+        }
+        .destination:hover {
+            transform: scale(1.1);<}
+        @keyframes scrollIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        h2 {
+            color: gold;
+        }
+        p{
+            color:#2E2216
+        }
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgb(142, 142, 142);
+            width: 50%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .contact-form h2 {
+            color: gold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+        .contact-form button {
+            background: gold;
+            color: #2E2216;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-form button:hover {
+            background: #FFD700;
+        }
+        footer {
+            background: #2E2216;
+            color: gold;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+            margin-top: 50px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: gold;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <br>
+        <br>
+        
+        <h1 class="fade-in">Pack Your Bags</h1>
+        <p class="fade-in">Plan your next holiday in minutes.</p>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Where are you headed to?">
+    </div>
+    <section class="destinations">
+        <div class="destination">
+            <h2>Paris, France</h2>
+            <p>Indulge in the grandeur of the city of love and lights.</p>
+        </div>
+        <div class="destination">
+            <h2>Kyoto, Japan</h2>
+            <p>Experience serene luxury amidst ancient temples.</p>
+        </div>
+        <div class="destination">
+            <h2>Bali, Indonesia</h2>
+            <p>Relax on stunning beaches in an exotic paradise.</p>
+        </div>
+        <div class="destination">
+            <h2>Santorini, Greece</h2>
+            <p>Enjoy breathtaking sunsets over white-washed cliffs.</p>
+        </div>
+    </section>
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Luxury Travel Planner. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#">&#xf09a;</a> <!-- Facebook -->
+            <a href="#">&#xf16d;</a> <!-- Instagram -->
+            <a href="#">&#xf099;</a> <!-- Twitter -->
+        </div>
+    </footer>
+</body>
+</html>
